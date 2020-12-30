@@ -1,0 +1,21 @@
+//UC1
+See Jason Server 
+json-server --watch employee.json
+
+//UC2
+Get into Local Server
+$ curl -X GET -H "Content-Type:application/json" "http://localhost:3000/employees"
+
+//UC3
+Get Particulat Delail
+$ curl -X GET -H "Content-Type:application/json" "http://localhost:3000/employees/1"
+
+//UC4 
+Add New Entry
+$ curl -X POST -H "Content-Type:application/json" -d'{"name":"Lisa","Salary":"2000"}' "http://localhost:3000/employees"
+
+//Update Entry
+$ curl -X PUT -H "Content-Type:application/json" -d'{"name":"JOSEPH","Salary":"2000"}' "http://localhost:3000/employees/12"
+
+//DELETE Entry
+$ curl -X DELETE -H "Content-Type:application/json" "http://localhost:3000/employees/7"
